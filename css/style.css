@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: 0 auto;
+}
+
+a{
+    color: #fff;
+    transition: all 0.4s;
+}
+
+a:hover{
+    color: crimson;
+    text-decoration: none;
+}
+
+/* Navigation starts */
+
+nav{
+    position: absolute;
+    width: 100%;
+    font-family: 'Ubuntu';
+}
+
+nav .logo span{
+    color: crimson;
+}
+
+nav .max-width{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+ul li:hover{
+    color: crimson;
+}
+
+.menu-btn{
+    display: none;
+    font-size: 23px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.menu-btn:hover{
+    color: crimson;
+}
+
+
+/* Navigation ends */
+
+/* Home starts */
+
+.home{
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center top;
+    min-height: 100vh;
+    color: #fff;
+    font-family: ;
+    font-family: 'Ubuntu';
+}
+
+.home-content{
+    padding-top: 16rem;
+}
+
+
+.home-content span{
+    color: crimson;
+}
+
+.home-content h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.home-content h2{
+    font-size: 2.6rem;
+}
+.home-content h3{
+    font-size: 1.8rem;
+}
+
+.home-content button{
+    background-color: crimson;
+    font-size: 1rem;
+    border: 2px solid crimson;
+    color: #fff;
+    border-radius: 6px;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    margin: 1rem 0;
+    transition: all 0.4s;
+    font-family: 'Ubuntu';
+}
+
+.home-content button:hover{
+    color: crimson;
+    background: none;
+}
+
+/* Home ends */
+
+/* About section starts */
+
+.about-title{
+    font-family: 'Ubuntu';
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.about-title::before{
+    content: "";
+    width: 12rem;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about-title::after{
+    content: "Who am I?";
+    position: absolute;
+    bottom: -25px;
+    z-index: 2;
+    padding: 0.2rem;
+    transform: translateX(-50%);
+    background-color:white;
+    color: crimson;
+    left: 50%;
+    font-weight: bold;
+}
+
+.about span{
+    color: crimson;
+}
+
+.about button{
+    background-color: crimson;
+    border: 2px solid crimson;
+    border-radius: 6px;
+    color: #fff;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-family: 'Ubuntu';
+    font-size: 1rem;
+}
+
+.about button:hover{
+    color: crimson;
+    background: none;
+}
+
+/* About section ends */
+
+/* My services section starts */
+.service{
+    background: black;
+    color: #fff;
+}
+
+.service-title::before{
+    content: "";
+    width: 12rem;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.service-title::after{
+    content: "What I provide?";
+    position: absolute;
+    bottom: -25px;
+    z-index: 2;
+    padding: 0.2rem;
+    transform: translateX(-50%);
+    background-color:black;
+    color: crimson;
+    font-weight: bold;
+    left: 50%;
+}
+
+.service span{
+    color: crimson;
+    font-size: 3.3rem;
+    margin: 1rem 0;
+}
+
+.service .box{
+    background-color: #222222;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.service .box:hover{
+    background-color: crimson;
+}
+
+.service .box:hover span{
+    color: white;
+}
+
+
+
+/* My services section ends */
+
+/* Media Queries starts */
+
+@media only screen and (max-width:980px){
+    .max-width{
+        padding: 0 40px;
+    }
+
+    .menu-btn{
+        display: block;
+        z-index: 1;
+    }
+
+    .menu-btn span.active::before{
+        content: "\f00d";
+    }
+
+    .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: black;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        padding-top: 70px;
+        transition: all 0.4s;
+    }
+
+    .menu.active{
+        left: 0;
+    }
+
+
+    .menu li{
+        display: block;
+    }
+
+    .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 1.8rem;
+    }
+
+    .service h3{
+        font-size: 1rem;
+    }
+
+    .service p{
+        font-size: 0.8rem;
+    }
+
+    
+
+}
+
+@media only screen and (max-width:760px){
+    .home-content h1{
+        font-size: 2.6rem;
+    }
+    .home-content h2{
+        font-size: 2.1rem;
+    }
+    .home-content h3{
+        font-size: 1.7rem;
+    }
+
+    .center{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home-content{
+        padding-top: 23rem;
+    }
+
+    .service h3{
+        font-size: 1.5rem;
+    }
+
+    .service p{
+        font-size: 1rem;
+    }
+
+    
+}
+
+/* Media Queries ends */
