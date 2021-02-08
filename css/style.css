@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Ubuntu';
 }
 
 
@@ -14,12 +15,12 @@
     margin: 0 auto;
 }
 
-a{
+nav a{
     color: #fff;
     transition: all 0.4s;
 }
 
-a:hover{
+nav a:hover{
     color: crimson;
     text-decoration: none;
 }
@@ -156,7 +157,7 @@ ul li:hover{
     color: crimson;
 }
 
-.about button{
+.about button, .pcontent button{
     background-color: crimson;
     border: 2px solid crimson;
     border-radius: 6px;
@@ -168,20 +169,20 @@ ul li:hover{
     font-size: 1rem;
 }
 
-.about button:hover{
+.about button:hover, .pcontent button:hover{
     color: crimson;
     background: none;
 }
 
 /* About section ends */
 
-/* My services section starts */
-.service{
+/* My skills section starts */
+.skill{
     background: black;
     color: #fff;
 }
 
-.service-title::before{
+.skill-title::before{
     content: "";
     width: 12rem;
     height: 3px;
@@ -191,8 +192,8 @@ ul li:hover{
     left: 50%;
     transform: translateX(-50%);
 }
-.service-title::after{
-    content: "What I provide?";
+.skill-title::after{
+    content: "What I know?";
     position: absolute;
     bottom: -25px;
     z-index: 2;
@@ -204,30 +205,153 @@ ul li:hover{
     left: 50%;
 }
 
-.service span{
+.skill span{
     color: crimson;
     font-size: 3.3rem;
     margin: 1rem 0;
 }
 
-.service .box{
+.skill .box{
     background-color: #222222;
     border-radius: 6px;
     cursor: pointer;
     transition: all 0.4s;
 }
 
-.service .box:hover{
+.skill .box:hover{
     background-color: crimson;
+    transform: scale(1.05);
 }
 
-.service .box:hover span{
+.skill .box:hover span{
     color: white;
 }
 
+.lefthead{
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.right-skill span{
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.line{
+    height: 5px;
+    width: 100%;
+    background-color: gray;
+    position: relative;
+}
+
+.line::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 93%;
+    background-color: crimson;
+}
+
+.css::before{
+    width: 72%;
+}
+
+.js::before{
+    width: 35%;
+}
+
+.mysql::before{
+    width: 20%;
+}
 
 
-/* My services section ends */
+/* My skills section ends */
+
+/* Project section starts */
+
+.project-title::before{
+    content: "";
+    width: 12rem;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.project-title::after{
+    content: "What I had done?";
+    position: absolute;
+    bottom: -25px;
+    z-index: 2;
+    padding: 0.2rem;
+    transform: translateX(-50%);
+    background-color:white;
+    color: crimson;
+    font-weight: bold;
+    left: 50%;
+}
+
+.pbox{
+    background-color: #f7f7f7;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.pbox:hover{
+    transform: scale(1.05);
+}
+
+.pcontent h2{
+    color: black;
+}
+
+.pcontent button{
+
+}
+
+.project img{
+    width: 100%;
+}
+
+/* Project section ends */
+
+/* Footer section starts */
+
+footer{
+    padding: 2rem 0;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+
+footer .social span{
+    margin: 0 0.4rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+footer span:hover{
+    color: crimson;
+}
+
+footer a{
+    color: #fff;
+}
+
+.footer-content{
+    margin-top: 0.6rem;
+}
+
+footer p span{
+    color: crimson;
+    font-weight: bolder;
+}
+
+/* Footer section ends */
 
 /* Media Queries starts */
 
@@ -272,11 +396,11 @@ ul li:hover{
         font-size: 1.8rem;
     }
 
-    .service h3{
+    .skill h3{
         font-size: 1rem;
     }
 
-    .service p{
+    .skill p{
         font-size: 0.8rem;
     }
 
@@ -285,14 +409,15 @@ ul li:hover{
 }
 
 @media only screen and (max-width:760px){
+    
     .home-content h1{
-        font-size: 2.6rem;
+        font-size: 2.2rem;
     }
     .home-content h2{
-        font-size: 2.1rem;
+        font-size: 1.7rem;
     }
     .home-content h3{
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
 
     .center{
@@ -305,11 +430,11 @@ ul li:hover{
         padding-top: 23rem;
     }
 
-    .service h3{
+    .skill h3{
         font-size: 1.5rem;
     }
 
-    .service p{
+    .skill p{
         font-size: 1rem;
     }
 
