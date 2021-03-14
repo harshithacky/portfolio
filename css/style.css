@@ -6,8 +6,9 @@
     box-sizing: border-box;
     font-family: 'Ubuntu';
 }
-html{
+html,body{
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 
@@ -77,7 +78,7 @@ ul li:hover{
     background-image: url(../images/banner.jpg);
     background-size: cover;
     background-position: center top;
-    min-height: 100vh;
+    min-height: 100%;
     color: #fff;
     font-family: ;
     font-family: 'Ubuntu';
@@ -258,11 +259,11 @@ ul li:hover{
 }
 
 .css::before{
-    width: 72%;
+    width: 80%;
 }
 
 .js::before{
-    width: 35%;
+    width: 50%;
 }
 
 .mysql::before{
