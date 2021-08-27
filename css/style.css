@@ -74,6 +74,18 @@ ul li:hover{
 
 /* Home starts */
 
+.back-top{
+    position: fixed; 
+    right: 1.8rem; 
+    bottom: 1.5rem;
+}
+
+.back-top a{
+    color: crimson; 
+    font-size: 1.5rem;
+    z-index: 5;
+}
+
 .home{
     background-image: url(../images/banner.jpg);
     background-size: cover;
@@ -312,11 +324,11 @@ ul li:hover{
     color: black;
 }
 
-.pcontent button{
 
-}
 
 .project img{
+    height: 20rem;
+    object-fit: cover;
     width: 100%;
 }
 
