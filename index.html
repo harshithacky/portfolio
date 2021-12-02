@@ -12,8 +12,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -48,7 +46,7 @@
             <div class="home-content">
                 <div class="text-1"><h3>Hello, My name is</h3></div>
                 <div class="text-2"><h1>Harshit Chaurasia</h1></div>
-                <div class="text-3"><h2>I'm a <span>Web Developer</span></h2></div>
+                <div class="text-3"><h2>I'm a <span class="auto-typed"></span></h2></div>
                 <a href="mailto:chrs.chaurasia19@gmail.com"><button>Hire Me</button></a>
             </div>
             </div>
@@ -409,5 +407,14 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-typed",{
+            strings: ["Web Developer", "Programmer"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        });
+    </script>
   </body>
 </html>
